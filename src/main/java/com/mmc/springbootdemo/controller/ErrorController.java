@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ErrorController {
     @RequestMapping(value = "/500", method = RequestMethod.GET)
     public String div0() {
-        int i=5/0;
+        int i = 5/0;
         return "";
     }
 }

@@ -33,7 +33,7 @@ public class JsonController {
         return users;
     }
 
-    @RequestMapping(value = "/add_user", method = RequestMethod.GET)
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
     public User insertUser(String name, Integer age) {
         log.debug("插入用户", name, age);
         _userService.addUser(name, age);

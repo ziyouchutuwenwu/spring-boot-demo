@@ -6,8 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class DefaulgConfig {
+public class UnderTowerConfig {
 
+    //替换tomcat的undertower配置
     @Bean
     UndertowServletWebServerFactory embeddedServletContainerFactory() {
 

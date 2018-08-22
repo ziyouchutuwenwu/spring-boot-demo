@@ -74,3 +74,8 @@ logging:
 
 pagehelper:
   helper-dialect: postgresql
+
+shiro:
+  loginUrl: /login.html
+  shiro.successUrl: /login_success.html
+  shiro.unauthorizedUrl: /login.html

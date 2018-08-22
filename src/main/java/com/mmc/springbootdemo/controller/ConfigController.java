@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/config")
-public class ConfigurationController {
+public class ConfigController {
 
     private ConfigurationService _configService;
 

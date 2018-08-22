@@ -30,6 +30,7 @@
         <druid.version>1.1.10</druid.version>
         <lombok.version>1.18.2</lombok.version>
         <pagehelper.version>1.2.5</pagehelper.version>
+        <shiro.version>1.4.0</shiro.version>
     </properties>
 
 
@@ -111,6 +112,13 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>${pagehelper.version}</version>
+        </dependency>
+
+        <!--shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-web-starter</artifactId>
+            <version>${shiro.version}</version>
         </dependency>
 
     </dependencies>
