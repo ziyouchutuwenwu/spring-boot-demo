@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!-- 引入配置文件 -->
+    <properties resource="generator.properties" />
+    <!-- 指定数据连接驱动jar地址 -->
+    <classPathEntry location="${classPath}" />
+
+    <context id="context1" targetRuntime="MyBatis3Simple">
+
+        <!-- 数据库连接信息 -->
+        <jdbcConnection driverClass="${jdbc.driverClassName}"
+                        connectionURL="${jdbc.url}" userId="${jdbc.username}" password="${jdbc.password}" />
+
+        <!-- 生成Model对象路径配置 -->
+        <javaModelGenerator targetPackage="${bgm.model.pkgname}"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- 生成sqlXML文件路径配置，需要和mapper类在一个包下面，否则会出现问题 -->
+        <sqlMapGenerator targetPackage="${bgm.mapper.pkgname}"
+                         targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- 生成DAO的类文件路径配置 -->
+        <javaClientGenerator targetPackage="${bgm.mapper.pkgname}"
+                             targetProject="src/main/java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--要生成哪些表 -->
+        <table tableName="users" domainObjectName="User" />
+    </context>
+
+</generatorConfiguration>
