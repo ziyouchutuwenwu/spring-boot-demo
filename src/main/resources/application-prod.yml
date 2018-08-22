@@ -7,4 +7,4 @@ com:
       name: name in prod
 
 logging:
-  config: classpath:logConfig.xml
+  config: classpath:log-config.xml

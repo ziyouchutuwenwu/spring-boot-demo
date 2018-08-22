@@ -13,8 +13,8 @@ public class UserService {
     private UserMapper _userMapper;
 
     @Autowired
-    public void setUserMapper(UserMapper UserMapper) {
-        _userMapper = UserMapper;
+    public void setUserMapper(UserMapper userMapper) {
+        _userMapper = userMapper;
     }
 
     public List<User> getAllUsers() {
@@ -28,5 +28,9 @@ public class UserService {
 
     public void addUser(String name, Integer age) {
         _userMapper.insert(name, age);
+    }
+
+    public void batchAddUsers(List<User> users) {
+        _userMapper.batchInsert(users);
     }
 }

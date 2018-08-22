@@ -22,7 +22,7 @@ public class ShiroConfig {
     public ShiroFilterChainDefinition shiroFilterChainDefinition() {
         DefaultShiroFilterChainDefinition chainDefinition = new DefaultShiroFilterChainDefinition();
 
-        chainDefinition.addPathDefinition("/users/**", "authc, roles[admin]");
+//        chainDefinition.addPathDefinition("/users/**", "authc, roles[admin]");
 
 //        // /admin/**必须要有admin角色才可以访问
 //        chainDefinition.addPathDefinition("/admin/**", "authc, roles[admin]");

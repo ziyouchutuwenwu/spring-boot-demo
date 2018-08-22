@@ -18,4 +18,12 @@ public interface UserMapper {
 
     @Select("select * from users")
     List<User> getAllUsers();
+
+    @Insert("<script>"  +
+            "insert into users(name, age) VALUES" +
+            "<foreach collection=\"user_list\" item=\"iter_user\" index=\"index\"  separator=\",\">" +
+            "(#{iter_user.name},#{iter_user.age})" +
+            "</foreach>" +
+            "</script>")
+    int batchInsert(@Param("user_list") List<User> user_list);
 }

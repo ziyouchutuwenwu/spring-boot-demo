@@ -7,12 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
 @RestController
 @RequestMapping("/users")
-public class JsonController {
+public class UserController {
 
     private UserService _userService;
 
@@ -36,7 +38,15 @@ public class JsonController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public User insertUser(String name, Integer age) {
         log.debug("插入用户", name, age);
-        _userService.addUser(name, age);
+//        _userService.addUser(name, age);
+
+        List<User> users = new ArrayList<>();
+        User user = new User();
+        user.setName(name);
+        user.setAge(age);
+        users.add(user);
+        _userService.batchAddUsers(users);
+
         return _userService.findByName(name);
     }
 }
