@@ -1,7 +1,7 @@
 package com.mmc.springbootdemo;
 
-import com.mmc.springbootdemo.dao.mybatis.UserMapper;
 import com.mmc.springbootdemo.model.User;
+import com.mmc.springbootdemo.service.user.impl.JooqUserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,24 +12,22 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MyBatisMapperTest {
+public class JooqServiceTest {
 
-    private UserMapper _userMapper;
+    private JooqUserService _userService;
 
     @Autowired
-    public void setUserMapper(UserMapper userMapper){
-        _userMapper = userMapper;
+    public void setJooqUserService(JooqUserService userService){
+        _userService = userService;
     }
 
     @Test
-    public void doUserMapperTest(){
+    public void doJooqServiceTest(){
 
-        _userMapper.truncate();
-        _userMapper.insert("rico", 123);
+        _userService.clear();
+        _userService.addUser("rico", 123);
 
         List<User> users = new ArrayList<>();
         User user1 = new User();
@@ -42,27 +40,27 @@ public class MyBatisMapperTest {
         user2.setName("bbb");
         users.add(user2);
 
-        _userMapper.batchInsert(users);
+        _userService.batchAddUsers(users);
 
         User user;
-        user = _userMapper.findByName("rico");
+        user = _userService.findByName("rico");
         assert(user.getAge() == 123);
 
-        user = _userMapper.findByName("aaa");
+        user = _userService.findByName("aaa");
         assert(user.getAge() == 10);
 
-        user = _userMapper.findByName("bbb");
+        user = _userService.findByName("bbb");
         assert(user.getAge() == 20);
 
-        users = _userMapper.getAllUsers();
+        users = _userService.getAllUsers();
         assert(users.size() == 3);
 
-        _userMapper.updateUser("rico", 111);
-        user = _userMapper.findByName("rico");
+        _userService.updateUser("rico", 111);
+        user = _userService.findByName("rico");
         assert(user.getAge() == 111);
 
-        _userMapper.deleteUser("rico");
-        users = _userMapper.getAllUsers();
+        _userService.deleteUser("rico");
+        users = _userService.getAllUsers();
         assert(users.size() == 2);
     }
 }
