@@ -56,8 +56,6 @@ public class JooqUserService implements IUserService {
 
     @Override
     public User findByName(String name) {
-
-
         Result result = dsl.select().from(Tables.USERS).where(Tables.USERS.NAME.equal(name)).fetch();
 
         User user = new User();
