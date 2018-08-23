@@ -18,12 +18,12 @@ public interface UserMapper {
     List<User> getAllUsers();
 
     @Insert("<script>"  +
-            "insert into users(name, age) VALUES" +
-            "<foreach collection=\"user_list\" item=\"iter_user\" index=\"index\"  separator=\",\">" +
-            "(#{iter_user.name},#{iter_user.age})" +
+            "insert into users(name, age) values" +
+            "<foreach collection=\"userList\" item=\"iterUser\" index=\"index\"  separator=\",\">" +
+            "(#{iterUser.name},#{iterUser.age})" +
             "</foreach>" +
             "</script>")
-    void batchInsert(@Param("user_list") List<User> user_list);
+    void batchInsert(@Param("userList") List<User> userList);
 
     @Delete("delete from users where name = #{name}")
     void deleteUser(@Param("name") String name);

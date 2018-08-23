@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,45 +79,45 @@
     <session id="-1233682931">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="150" />
-          <entry key="md" value="2" />
+          <entry key="java" value="158" />
+          <entry key="md" value="3" />
           <entry key="pom" value="2" />
           <entry key="properties" value="8" />
           <entry key="py" value="1" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="27" />
+          <entry key="xml" value="28" />
           <entry key="yml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="150" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="JAVA" value="158" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="8" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="29" />
+          <entry key="XML" value="30" />
           <entry key="YAML" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="28" />
-          <entry key="java" value="3285" />
+          <entry key="java" value="3354" />
           <entry key="md" value="33" />
           <entry key="txt" value="44" />
           <entry key="xml" value="318" />
@@ -127,7 +126,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3285" />
+          <entry key="JAVA" value="3354" />
           <entry key="PLAIN_TEXT" value="105" />
           <entry key="XML" value="318" />
           <entry key="YAML" value="98" />
@@ -136,15 +135,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -263,8 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,12 +338,29 @@
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,12 +396,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JooqServiceTest.doJooqServiceTest">
-    <configuration name="JooqServiceTest.doJooqServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyBatisMapperTest.doUserMapperTest">
+    <configuration name="MyBatisMapperTest.doUserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-demo" />
       <option name="PACKAGE_NAME" value="com.mmc.springbootdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.mmc.springbootdemo.JooqServiceTest" />
-      <option name="METHOD_NAME" value="doJooqServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.mmc.springbootdemo.MyBatisMapperTest" />
+      <option name="METHOD_NAME" value="doUserMapperTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -405,24 +416,15 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.SpringBootDemoApplication" />
-      <item itemvalue="JUnit.JooqServiceTest.doJooqServiceTest" />
+      <item itemvalue="JUnit.MyBatisMapperTest.doUserMapperTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JooqServiceTest.doJooqServiceTest" />
+        <item itemvalue="JUnit.MyBatisMapperTest.doUserMapperTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="MyBatisMapperTest_doUserMapperTest - 2018.08.23 at 21h 56m 30s.xml">
-      <configuration name="MyBatisMapperTest.doUserMapperTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyBatisMapperTest_doUserMapperTest - 2018.08.23 at 21h 56m 58s.xml">
-      <configuration name="MyBatisMapperTest.doUserMapperTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyBatisMapperTest_doUserMapperTest - 2018.08.23 at 21h 58m 01s.xml">
-      <configuration name="MyBatisMapperTest.doUserMapperTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyBatisMapperTest_doUserMapperTest - 2018.08.23 at 21h 59m 01s.xml">
       <configuration name="MyBatisMapperTest.doUserMapperTest" configurationId="JUnit" />
     </history-entry>
@@ -444,19 +446,28 @@
     <history-entry file="JooqServiceTest_doJooqServiceTest - 2018.08.23 at 22h 07m 13s.xml">
       <configuration name="JooqServiceTest.doJooqServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JooqServiceTest_doJooqServiceTest - 2018.08.23 at 22h 41m 07s.xml">
+      <configuration name="JooqServiceTest.doJooqServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JooqServiceTest_doJooqServiceTest - 2018.08.23 at 22h 41m 54s.xml">
+      <configuration name="JooqServiceTest.doJooqServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JooqServiceTest_doJooqServiceTest - 2018.08.23 at 22h 43m 00s.xml">
+      <configuration name="JooqServiceTest.doJooqServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="31" width="1526" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.23378378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.23648648" />
       <window_info id="Structure" order="1" sideWeight="0.5007429" side_tool="true" weight="0.27702704" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838038" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6032689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5780089" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.60178304" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.576523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -555,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/jooq/generator/auto/tables/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/jooq/generator/auto/tables/daos/UsersDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -575,13 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/jooq/generator/auto/Tables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -638,13 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -768,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/JooqServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -803,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -817,13 +793,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/JooqServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/jooq/generator/auto/tables/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/jooq/generator/auto/Tables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
