@@ -7,7 +7,6 @@ import org.jooq.Record;
 import org.jooq.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +27,7 @@ public class JooqUserService {
     public List getAllUsers(){
         Result<Record> result = dsl.select().from(Tables.USERS).fetch();
 
-        List users = new ArrayList();
+        List<Object> users = new ArrayList<>();
 
         for ( Record record : result ) {
             Integer id = record.getValue(Tables.USERS.ID);

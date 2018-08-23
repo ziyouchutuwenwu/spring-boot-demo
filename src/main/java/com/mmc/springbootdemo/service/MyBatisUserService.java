@@ -4,7 +4,6 @@ import com.mmc.springbootdemo.dao.mybatis.UserMapper;
 import com.mmc.springbootdemo.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
