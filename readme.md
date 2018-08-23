@@ -11,5 +11,10 @@ pip install -r ./tools/requirements.txt
 python ./tools/db_init.py
 ```
 
+启动需要生成jooq的代码
+```
+mvn jooq-codegen:generate
+```
+
 # mbg不支持yml！！！
 - pgsql的jdbc驱动需要手工下载
