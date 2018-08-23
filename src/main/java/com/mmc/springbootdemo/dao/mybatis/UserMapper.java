@@ -1,10 +1,8 @@
 package com.mmc.springbootdemo.dao.mybatis;
 
 import com.mmc.springbootdemo.model.User;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
+
 import java.util.List;
 
 @Mapper
@@ -25,5 +23,14 @@ public interface UserMapper {
             "(#{iter_user.name},#{iter_user.age})" +
             "</foreach>" +
             "</script>")
-    int batchInsert(@Param("user_list") List<User> user_list);
+    void batchInsert(@Param("user_list") List<User> user_list);
+
+    @Delete("delete from users where name = #{name}")
+    void deleteUser(@Param("name") String name);
+
+    @Update("update users set age = #{newAge} where name = #{conditionName}")
+    void updateUser(@Param("conditionName") String conditionName, @Param("newAge") Integer newAge);
+
+    @Select("truncate table users")
+    void truncate();
 }

@@ -1,16 +1,16 @@
 package com.mmc.springbootdemo.dao;
 
-import com.mmc.springbootdemo.model.Configuration;
+import com.mmc.springbootdemo.model.Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class ConfigurationDao {
+public class ConfigDao {
 
-    private Configuration _configuration;
+    private Config _configuration;
 
     @Autowired
-    public ConfigurationDao(Configuration configuration){
+    public ConfigDao(Config configuration){
         _configuration = configuration;
     }
 

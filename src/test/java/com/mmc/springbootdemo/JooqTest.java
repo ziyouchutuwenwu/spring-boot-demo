@@ -1,6 +1,6 @@
 package com.mmc.springbootdemo;
 
-import com.mmc.springbootdemo.service.JooqUserService;
+import com.mmc.springbootdemo.service.user.impl.JooqUserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,6 +1,6 @@
 package com.mmc.springbootdemo.controller;
 
-import com.mmc.springbootdemo.service.ConfigurationService;
+import com.mmc.springbootdemo.service.ConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/config")
 public class ConfigController {
 
-    private ConfigurationService _configService;
+    private ConfigService _configService;
 
     @Autowired
-    public ConfigController(ConfigurationService configureService){
+    public ConfigController(ConfigService configureService){
         _configService = configureService;
     }
 

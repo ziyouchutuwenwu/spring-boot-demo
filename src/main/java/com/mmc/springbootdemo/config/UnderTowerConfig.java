@@ -1,4 +1,4 @@
-package com.mmc.springbootdemo.configuration;
+package com.mmc.springbootdemo.config;
 
 import io.undertow.UndertowOptions;
 import org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory;

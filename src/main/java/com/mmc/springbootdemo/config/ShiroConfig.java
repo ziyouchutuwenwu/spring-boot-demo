@@ -1,4 +1,4 @@
-package com.mmc.springbootdemo.configuration;
+package com.mmc.springbootdemo.config;
 
 import com.mmc.springbootdemo.shiro.CustomRealm;
 import org.apache.shiro.realm.Realm;
