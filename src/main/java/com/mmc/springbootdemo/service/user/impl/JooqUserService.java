@@ -33,7 +33,8 @@ public class JooqUserService implements IUserService {
     }
 
     public List<User> getAllUsers(){
-        Result<Record> result = dsl.select().from(Tables.USERS).fetch();
+//        Result<Record> result = dsl.select().from(Tables.USERS).fetch();
+        Result<Record> result = dsl.fetch("select * from users");
 
         List<User> users = new ArrayList<>();
 
@@ -55,6 +56,8 @@ public class JooqUserService implements IUserService {
 
     @Override
     public User findByName(String name) {
+
+
         Result result = dsl.select().from(Tables.USERS).where(Tables.USERS.NAME.equal(name)).fetch();
 
         User user = new User();
@@ -101,6 +104,7 @@ public class JooqUserService implements IUserService {
 
     @Override
     public void clear() {
-        dsl.truncate(Tables.USERS).execute();
+        dsl.execute("truncate table users");
+//        dsl.truncate(Tables.USERS).execute();
     }
 }
