@@ -1,7 +1,8 @@
 package com.mmc.springbootdemo.controller;
 
 import com.mmc.springbootdemo.model.User;
-import com.mmc.springbootdemo.service.UserService;
+import com.mmc.springbootdemo.service.JooqUserService;
+import com.mmc.springbootdemo.service.MyBatisUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,18 +17,26 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
-    private UserService _userService;
+    private MyBatisUserService _mybatisUserService;
+    private JooqUserService _jooqUserService;
 
     @Autowired
-    public void setUserService(UserService userService) {
-        this._userService = userService;
+    public void setMyBatisUserService(MyBatisUserService myBatisUserService) {
+        _mybatisUserService = myBatisUserService;
+    }
+
+    @Autowired
+    public void setJooqUserService(JooqUserService jooqUserService){
+        _jooqUserService = jooqUserService;
     }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public List<User> getAllUsers() {
 
 //        PageHelper.startPage(2, 4);
-        List users = _userService.getAllUsers();
+//        List users = _mybatisUserService.getAllUsers();
+
+        List users = _jooqUserService.getAllUsers();
 
         log.info("这是测试信息");
         log.debug("这是调试信息");
@@ -38,6 +47,7 @@ public class UserController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public User insertUser(String name, Integer age) {
         log.debug("插入用户", name, age);
+
 //        _userService.addUser(name, age);
 
         List<User> users = new ArrayList<>();
@@ -45,8 +55,15 @@ public class UserController {
         user.setName(name);
         user.setAge(age);
         users.add(user);
-        _userService.batchAddUsers(users);
+        _mybatisUserService.batchAddUsers(users);
 
-        return _userService.findByName(name);
+        return _mybatisUserService.findByName(name);
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.GET)
+    public void deleteUser(Integer id){
+        log.debug("删除用户", id);
+
+        _jooqUserService.delete(id);
     }
 }

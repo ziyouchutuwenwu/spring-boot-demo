@@ -57,13 +57,8 @@ spring:
         login-username: mmc
         login-password: 123456
 
-  jpa:
-    properties:
-      hibernate:
-        temp:
-          #解决spring boot的这个报错信息：这个 org.postgresql.jdbc.PgConnection.createClob() 方法尚未被实作。
-          use_jdbc_metadata_defaults: false
-    open-in-view: false
+  jooq:
+    sql-dialect: postgres
 
 logging:
   file: logs/log.log

@@ -1,6 +1,6 @@
 package com.mmc.springbootdemo.service;
 
-import com.mmc.springbootdemo.dao.UserMapper;
+import com.mmc.springbootdemo.dao.mybatis.UserMapper;
 import com.mmc.springbootdemo.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserService {
+public class MyBatisUserService {
 
     private UserMapper _userMapper;
 

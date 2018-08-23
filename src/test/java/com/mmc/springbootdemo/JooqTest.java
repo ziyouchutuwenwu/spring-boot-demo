@@ -1,7 +1,6 @@
 package com.mmc.springbootdemo;
 
-import com.mmc.springbootdemo.dao.mybatis.UserMapper;
-import com.mmc.springbootdemo.model.User;
+import com.mmc.springbootdemo.service.JooqUserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,18 +11,18 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MyBatisMapperTest {
+public class JooqTest {
 
-    private UserMapper _userMapper;
+    private JooqUserService _userService;
 
     @Autowired
-    public MyBatisMapperTest(UserMapper userMapper){
-        _userMapper = userMapper;
+    public void setJooqUserService(JooqUserService userService){
+        _userService = userService;
     }
 
     @Test
-    public void getAllUsers(){
-        List<User> users = _userMapper.getAllUsers();
+    public void getAllUsersTest() {
+        List users = _userService.getAllUsers();
         Assert.assertEquals(users.size(), 10);
     }
 }

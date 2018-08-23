@@ -1,4 +1,4 @@
-package com.mmc.springbootdemo.dao;
+package com.mmc.springbootdemo.dao.mybatis;
 
 import com.mmc.springbootdemo.model.User;
 import org.apache.ibatis.annotations.Insert;
