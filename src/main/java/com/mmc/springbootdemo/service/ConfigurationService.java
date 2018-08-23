@@ -10,7 +10,7 @@ public class ConfigurationService {
     private ConfigurationDao _configurationDao;
 
     @Autowired
-    public void setConfigurationDao(ConfigurationDao configurationDao) {
+    public ConfigurationService(ConfigurationDao configurationDao) {
         _configurationDao = configurationDao;
     }
 

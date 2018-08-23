@@ -26,7 +26,7 @@
 
             <!--mysql为数据库名称-->
             <!--pgsql为schema-->
-            <inputSchema>public</inputSchema>
+            <inputSchema>public</inputSchema>z
         </database>
 
         <generate>

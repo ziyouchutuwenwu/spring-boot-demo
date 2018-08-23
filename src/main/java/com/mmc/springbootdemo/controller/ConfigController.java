@@ -13,7 +13,7 @@ public class ConfigController {
     private ConfigurationService _configService;
 
     @Autowired
-    public void setConfigureService(ConfigurationService configureService){
+    public ConfigController(ConfigurationService configureService){
         _configService = configureService;
     }
 

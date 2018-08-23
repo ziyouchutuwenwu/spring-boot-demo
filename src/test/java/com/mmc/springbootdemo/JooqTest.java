@@ -16,7 +16,7 @@ public class JooqTest {
     private JooqUserService _userService;
 
     @Autowired
-    public void setJooqUserService(JooqUserService userService){
+    public JooqTest(JooqUserService userService){
         _userService = userService;
     }
 

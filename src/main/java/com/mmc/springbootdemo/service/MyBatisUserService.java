@@ -12,13 +12,12 @@ public class MyBatisUserService {
     private UserMapper _userMapper;
 
     @Autowired
-    public void setUserMapper(UserMapper userMapper) {
+    public MyBatisUserService(UserMapper userMapper) {
         _userMapper = userMapper;
     }
 
     public List<User> getAllUsers() {
-        List<User> users = _userMapper.getAllUsers();
-        return users;
+        return _userMapper.getAllUsers();
     }
 
     public User findByName(String name){

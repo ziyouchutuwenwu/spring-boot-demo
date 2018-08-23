@@ -20,12 +20,8 @@ public class UserController {
     private JooqUserService _jooqUserService;
 
     @Autowired
-    public void setMyBatisUserService(MyBatisUserService myBatisUserService) {
+    public UserController(MyBatisUserService myBatisUserService, JooqUserService jooqUserService) {
         _mybatisUserService = myBatisUserService;
-    }
-
-    @Autowired
-    public void setJooqUserService(JooqUserService jooqUserService){
         _jooqUserService = jooqUserService;
     }
 
@@ -35,7 +31,7 @@ public class UserController {
 //        PageHelper.startPage(2, 4);
 //        List users = _mybatisUserService.getAllUsers();
 
-        List users = _jooqUserService.getAllUsers();
+        List<User> users = _jooqUserService.getAllUsers();
 
         log.info("这是测试信息");
         log.debug("这是调试信息");

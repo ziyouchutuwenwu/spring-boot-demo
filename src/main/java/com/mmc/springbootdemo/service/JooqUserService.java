@@ -24,10 +24,10 @@ public class JooqUserService {
         dsl.deleteFrom(Tables.USERS).where(Tables.USERS.ID.eq(id)).execute();
     }
 
-    public List getAllUsers(){
+    public List<User> getAllUsers(){
         Result<Record> result = dsl.select().from(Tables.USERS).fetch();
 
-        List<Object> users = new ArrayList<>();
+        List<User> users = new ArrayList<>();
 
         for ( Record record : result ) {
             Integer id = record.getValue(Tables.USERS.ID);

@@ -10,7 +10,7 @@ public class ConfigurationDao {
     private Configuration _configuration;
 
     @Autowired
-    public void setConfiguration(Configuration configuration){
+    public ConfigurationDao(Configuration configuration){
         _configuration = configuration;
     }
 
