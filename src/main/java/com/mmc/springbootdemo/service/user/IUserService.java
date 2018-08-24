@@ -1,7 +1,6 @@
 package com.mmc.springbootdemo.service.user;
 
 import com.mmc.springbootdemo.model.User;
-
 import java.util.List;
 
 public interface IUserService {

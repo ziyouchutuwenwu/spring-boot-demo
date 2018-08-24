@@ -1,13 +1,13 @@
 package com.mmc.springbootdemo.controller;
 
 import com.mmc.springbootdemo.model.User;
+import com.mmc.springbootdemo.service.user.IUserService;
 import com.mmc.springbootdemo.service.user.impl.JooqUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping("/users/jooq")
 public class JooqUserController {
 
-    private JooqUserService _jooqUserService;
+    private IUserService _jooqUserService;
 
     @Autowired
     public JooqUserController(JooqUserService jooqUserService) {
@@ -73,7 +73,7 @@ public class JooqUserController {
     public void deleteUser(String name){
         log.debug("这是deleteUser", name);
 
-        _jooqUserService.delete(name);
+        _jooqUserService.deleteUser(name);
     }
 
     @RequestMapping(value = "/update", method = RequestMethod.GET)

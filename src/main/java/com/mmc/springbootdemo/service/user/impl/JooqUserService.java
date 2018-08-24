@@ -4,22 +4,13 @@ import com.mmc.springbootdemo.model.User;
 import com.mmc.springbootdemo.service.user.IUserService;
 import my.jooq.generator.auto.Tables;
 import my.jooq.generator.auto.tables.records.UsersRecord;
-import org.jooq.*;
-import org.jooq.exception.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.w3c.dom.Document;
-import org.xml.sax.ContentHandler;
-import org.xml.sax.SAXException;
-
-import java.io.OutputStream;
-import java.io.Writer;
-import java.sql.ResultSet;
+import org.jooq.*;
 import java.util.*;
-import java.util.Comparator;
 
 @Service
-public class JooqUserService implements IUserService {
+public class JooqUserService implements IUserService{
 
     private DSLContext dsl;
 
@@ -28,10 +19,7 @@ public class JooqUserService implements IUserService {
         dsl = context;
     }
 
-    public void delete(String name) {
-        dsl.deleteFrom(Tables.USERS).where(Tables.USERS.NAME.eq(name)).execute();
-    }
-
+    @Override
     public List<User> getAllUsers(){
 //        Result<Record> result = dsl.select().from(Tables.USERS).fetch();
         Result<Record> result = dsl.fetch("select * from users");

@@ -1,6 +1,7 @@
 package com.mmc.springbootdemo.controller;
 
 import com.mmc.springbootdemo.model.User;
+import com.mmc.springbootdemo.service.user.IUserService;
 import com.mmc.springbootdemo.service.user.impl.MyBatisUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import java.util.List;
 @RequestMapping("/users/mybatis")
 public class MyBatisUserController {
 
-    private MyBatisUserService _mybatisUserService;
+    private IUserService _mybatisUserService;
 
     @Autowired
     public MyBatisUserController(MyBatisUserService myBatisUserService) {
