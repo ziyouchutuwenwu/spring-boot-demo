@@ -14,4 +14,6 @@ public interface IUserService {
 
     List<User> getAllUsers();
     User findByName(String name);
+
+    void doTranscation();
 }

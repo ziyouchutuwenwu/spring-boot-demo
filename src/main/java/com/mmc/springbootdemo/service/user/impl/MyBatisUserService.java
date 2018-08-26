@@ -28,6 +28,10 @@ public class MyBatisUserService implements IUserService {
     }
 
     @Override
+    public void doTranscation() {
+    }
+
+    @Override
     public void addUser(String name, Integer age) {
         _userMapper.insert(name, age);
     }

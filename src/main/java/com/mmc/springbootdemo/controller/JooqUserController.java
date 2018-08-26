@@ -89,4 +89,11 @@ public class JooqUserController {
 
         _jooqUserService.clear();
     }
+
+    @RequestMapping(value = "/transcation_demo", method = RequestMethod.GET)
+    public void transcationDemo(){
+        log.debug("这是transcationDemo");
+
+        _jooqUserService.doTranscation();
+    }
 }

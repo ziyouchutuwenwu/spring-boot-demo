@@ -8,6 +8,7 @@ import my.jooq.generator.auto.tables.records.UsersRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.jooq.*;
+
 import java.util.*;
 
 @Slf4j
@@ -70,26 +71,13 @@ public class JooqUserService implements IUserService{
 
     @Override
     public void batchAddUsers(List<User> users) {
-        try{
-            dsl.transaction(configuration -> {
 
-                Result<UsersRecord> records = dsl.newResult(Tables.USERS);
-
-                for (User user: users){
-                    UsersRecord userRecord = dsl.newRecord(Tables.USERS, user);
-                    records.add(userRecord);
-                }
-
-                dsl.batchStore(records).execute();
-
-                throw new Exception("故意抛出的异常");
-            });
+        Result<UsersRecord> records = dsl.newResult(Tables.USERS);
+        for (User user: users){
+            UsersRecord userRecord = dsl.newRecord(Tables.USERS, user);
+            records.add(userRecord);
         }
-        catch (Exception exception){
-            log.info("捕获故意抛出的批量插入异常");
-        }
-
-
+        dsl.batchStore(records).execute();
     }
 
     @Override
@@ -106,5 +94,20 @@ public class JooqUserService implements IUserService{
     public void clear() {
         dsl.execute("truncate table users");
 //        dsl.truncate(Tables.USERS).execute();
+    }
+
+    @Override
+    public void doTranscation(){
+
+        try {
+            dsl.transaction(configuration -> {
+                dsl.execute("insert into users (age, name) values(111,'111')");
+                dsl.execute("insert into users (age, name) values(222,'222')");
+                throw new Exception("使用jooq自带事务抛出的异常");
+            });
+        }
+        catch (Exception e){
+            log.info("捕获jooq事务异常");
+        }
     }
 }
