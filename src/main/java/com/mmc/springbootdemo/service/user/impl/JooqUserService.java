@@ -2,6 +2,7 @@ package com.mmc.springbootdemo.service.user.impl;
 
 import com.mmc.springbootdemo.model.User;
 import com.mmc.springbootdemo.service.user.IUserService;
+import lombok.extern.slf4j.Slf4j;
 import my.jooq.generator.auto.Tables;
 import my.jooq.generator.auto.tables.records.UsersRecord;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.jooq.*;
 import java.util.*;
 
+@Slf4j
 @Service
 public class JooqUserService implements IUserService{
 
@@ -68,14 +70,26 @@ public class JooqUserService implements IUserService{
 
     @Override
     public void batchAddUsers(List<User> users) {
-        Result<UsersRecord> records = dsl.newResult(Tables.USERS);
+        try{
+            dsl.transaction(configuration -> {
 
-        for (User user: users){
-            UsersRecord userRecord = dsl.newRecord(Tables.USERS, user);
-            records.add(userRecord);
+                Result<UsersRecord> records = dsl.newResult(Tables.USERS);
+
+                for (User user: users){
+                    UsersRecord userRecord = dsl.newRecord(Tables.USERS, user);
+                    records.add(userRecord);
+                }
+
+                dsl.batchStore(records).execute();
+
+                throw new Exception("故意抛出的异常");
+            });
+        }
+        catch (Exception exception){
+            log.info("捕获故意抛出的批量插入异常");
         }
 
-        dsl.batchStore(records).execute();
+
     }
 
     @Override
