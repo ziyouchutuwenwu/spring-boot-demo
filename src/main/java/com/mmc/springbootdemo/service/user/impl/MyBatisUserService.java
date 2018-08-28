@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.beans.ExceptionListener;
 import java.util.List;
@@ -34,14 +35,9 @@ public class MyBatisUserService implements IUserService {
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public void doTranscation() {
-        try {
-            _userMapper.insert("112233", 123);
-            int i = 4/0;
-            _userMapper.insert("mmc", 123);
-        }catch (Exception e){
-            log.info("捕获mybatis异常");
-        }
+    public void doTranscation(){
+        _userMapper.insert("rico", 10);
+        throw new RuntimeException("mybatis 事务抛异常");
     }
 
     @Override

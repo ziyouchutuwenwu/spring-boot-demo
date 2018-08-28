@@ -15,5 +15,5 @@ public interface IUserService {
     List<User> getAllUsers();
     User findByName(String name);
 
-    void doTranscation();
+    void doTranscation() throws Exception;
 }

@@ -96,6 +96,10 @@ public class JooqUserController {
     public void transcationDemo(){
         log.debug("这是transcationDemo");
 
-        _jooqUserService.doTranscation();
+        try {
+            _jooqUserService.doTranscation();
+        } catch (Exception e) {
+            log.debug("其实到不了这里");
+        }
     }
 }

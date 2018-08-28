@@ -96,6 +96,10 @@ public class MyBatisUserController {
     public void transcationDemo(){
         log.debug("这是transcationDemo");
 
-        _mybatisUserService.doTranscation();
+        try {
+            _mybatisUserService.doTranscation();
+        } catch (Exception e) {
+            log.debug("捕获mybatis事务异常");
+        }
     }
 }

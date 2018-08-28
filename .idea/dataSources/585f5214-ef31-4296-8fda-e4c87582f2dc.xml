@@ -78,8 +78,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-08-28.13:02:23.680</IntrospectionTimestamp>
-      <IntrospectionStateNumber>606</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-08-28.14:01:32.183</IntrospectionTimestamp>
+      <IntrospectionStateNumber>630</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -137,7 +137,7 @@
     <table id="23" parent="15" name="users">
       <ObjectId>16387</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>606</StateNumber>
+      <StateNumber>630</StateNumber>
     </table>
     <column id="24" parent="23" name="id">
       <Position>1</Position>
