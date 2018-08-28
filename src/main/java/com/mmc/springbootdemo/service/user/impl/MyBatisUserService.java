@@ -3,11 +3,16 @@ package com.mmc.springbootdemo.service.user.impl;
 import com.mmc.springbootdemo.dao.mybatis.UserMapper;
 import com.mmc.springbootdemo.model.User;
 import com.mmc.springbootdemo.service.user.IUserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.beans.ExceptionListener;
 import java.util.List;
 
-@Service
+@Slf4j
+@Service("mybatisService")
 public class MyBatisUserService implements IUserService {
 
     private UserMapper _userMapper;
@@ -28,7 +33,15 @@ public class MyBatisUserService implements IUserService {
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void doTranscation() {
+        try {
+            _userMapper.insert("112233", 123);
+            int i = 4/0;
+            _userMapper.insert("mmc", 123);
+        }catch (Exception e){
+            log.info("捕获mybatis异常");
+        }
     }
 
     @Override

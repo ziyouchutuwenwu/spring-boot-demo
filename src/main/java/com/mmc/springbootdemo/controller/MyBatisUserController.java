@@ -5,6 +5,7 @@ import com.mmc.springbootdemo.service.user.IUserService;
 import com.mmc.springbootdemo.service.user.impl.MyBatisUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,8 @@ public class MyBatisUserController {
     private IUserService _mybatisUserService;
 
     @Autowired
-    public MyBatisUserController(MyBatisUserService myBatisUserService) {
+    @Qualifier("mybatisService")
+    public void setMyBatisService(IUserService myBatisUserService) {
         _mybatisUserService = myBatisUserService;
     }
 
@@ -88,5 +90,12 @@ public class MyBatisUserController {
         log.debug("这是clearUsers");
 
         _mybatisUserService.clear();
+    }
+
+    @RequestMapping(value = "/transcation_demo", method = RequestMethod.GET)
+    public void transcationDemo(){
+        log.debug("这是transcationDemo");
+
+        _mybatisUserService.doTranscation();
     }
 }

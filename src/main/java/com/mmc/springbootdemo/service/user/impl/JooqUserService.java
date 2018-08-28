@@ -12,7 +12,7 @@ import org.jooq.*;
 import java.util.*;
 
 @Slf4j
-@Service
+@Service("jooqService")
 public class JooqUserService implements IUserService{
 
     private DSLContext dsl;

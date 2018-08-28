@@ -5,6 +5,7 @@ import com.mmc.springbootdemo.service.user.IUserService;
 import com.mmc.springbootdemo.service.user.impl.JooqUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,8 @@ public class JooqUserController {
     private IUserService _jooqUserService;
 
     @Autowired
-    public JooqUserController(JooqUserService jooqUserService) {
+    @Qualifier("jooqService")
+    public void setJooqService(IUserService jooqUserService) {
         _jooqUserService = jooqUserService;
     }
 
