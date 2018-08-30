@@ -19,13 +19,9 @@ public class MyBatisUserService implements IUserService {
     private AnnotationUserMapper _annotationUserMapper;
 
     @Autowired
-    public void setXmlUserMapper(XmlUserMapper userMapper) {
-        _xmlUserMapper = userMapper;
-    }
-
-    @Autowired
-    public void setAnnotationUserMapper(AnnotationUserMapper userMapper) {
-        _annotationUserMapper = userMapper;
+    public MyBatisUserService(XmlUserMapper xmlMapper, AnnotationUserMapper annotationMapper) {
+        _xmlUserMapper = xmlMapper;
+        _annotationUserMapper = annotationMapper;
     }
 
     @Override
