@@ -19,7 +19,7 @@
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <!-- 生成sqlXML文件路径配置，需要和mapper类在一个包下面，否则会出现问题 -->
+        <!-- 生成sqlXML文件路径配置，如果不和mapper类在一个包下面，需要设置mybatis的mapper-locations属性 -->
         <sqlMapGenerator targetPackage="${bgm.mapper.xmlpkgname}"
                          targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
