@@ -15,7 +15,7 @@ import java.util.List;
 @Service("mybatisService")
 public class MyBatisUserService implements IUserService {
 
-    private XmlUserMapper        _xmlUserMapper;
+    private XmlUserMapper _xmlUserMapper;
     private AnnotationUserMapper _annotationUserMapper;
 
     @Autowired

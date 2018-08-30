@@ -76,4 +76,4 @@ shiro:
   shiro.unauthorizedUrl: /login.html
 
 mybatis:
-  mapper-locations: classpath:my.mybatis.generator.auto.xml/*.xml
+  mapper-locations: "classpath*:**/**Mapper.xml"

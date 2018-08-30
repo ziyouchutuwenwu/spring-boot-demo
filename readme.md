@@ -11,8 +11,9 @@ pip install -r ./tools/requirements.txt
 python ./tools/db_init.py
 ```
 
-启动需要生成jooq的代码
+启动需要生成代码
 ```
+mvn mybatis-generator:generate
 mvn jooq-codegen:generate
 ```
 

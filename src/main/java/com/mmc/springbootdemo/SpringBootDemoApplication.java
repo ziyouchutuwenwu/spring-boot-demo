@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
-//@MapperScan("my.mybatis.generator.auto")
+@MapperScan({"my.mybatis.generator.auto","com.mmc.springbootdemo.dao.mybatis"})
 @ServletComponentScan
 @SpringBootApplication
 public class SpringBootDemoApplication {
