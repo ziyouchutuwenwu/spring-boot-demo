@@ -74,3 +74,6 @@ shiro:
   loginUrl: /login.html
   shiro.successUrl: /login_success.html
   shiro.unauthorizedUrl: /login.html
+
+mybatis:
+  mapper-locations: classpath:my.mybatis.generator.auto.xml/*.xml

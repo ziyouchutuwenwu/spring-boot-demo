@@ -20,7 +20,7 @@
         </javaModelGenerator>
 
         <!-- 生成sqlXML文件路径配置，需要和mapper类在一个包下面，否则会出现问题 -->
-        <sqlMapGenerator targetPackage="${bgm.mapper.pkgname}"
+        <sqlMapGenerator targetPackage="${bgm.mapper.xmlpkgname}"
                          targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>

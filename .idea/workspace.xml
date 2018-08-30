@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/585f5214-ef31-4296-8fda-e4c87582f2dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/585f5214-ef31-4296-8fda-e4c87582f2dc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/585f5214-ef31-4296-8fda-e4c87582f2dc/storage_v2/_src_/database/my_db.8XM4Bg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/585f5214-ef31-4296-8fda-e4c87582f2dc/storage_v2/_src_/database/my_db.8XM4Bg/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="添加mybatis的xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/XmlUserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/MyBatisUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/MyBatisUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/AnnotationUserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml/mybatis-gen-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml/mybatis-gen-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisAnnotationUserMapperTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,53 +80,61 @@
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
-          <entry key="java" value="158" />
+          <entry key="class" value="7" />
+          <entry key="java" value="192" />
           <entry key="md" value="3" />
           <entry key="pom" value="2" />
-          <entry key="properties" value="8" />
+          <entry key="properties" value="13" />
           <entry key="py" value="1" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="28" />
-          <entry key="yml" value="18" />
+          <entry key="xml" value="35" />
+          <entry key="yml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="158" />
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="192" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Properties" value="8" />
+          <entry key="Properties" value="13" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="30" />
-          <entry key="YAML" value="18" />
+          <entry key="XML" value="37" />
+          <entry key="YAML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="28" />
-          <entry key="java" value="3354" />
+          <entry key="dummy" value="38" />
+          <entry key="java" value="3645" />
           <entry key="md" value="33" />
-          <entry key="txt" value="44" />
-          <entry key="xml" value="318" />
-          <entry key="yml" value="98" />
+          <entry key="properties" value="25" />
+          <entry key="txt" value="60" />
+          <entry key="xml" value="325" />
+          <entry key="yml" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3354" />
-          <entry key="PLAIN_TEXT" value="105" />
-          <entry key="XML" value="318" />
-          <entry key="YAML" value="98" />
+          <entry key="JAVA" value="3645" />
+          <entry key="PLAIN_TEXT" value="131" />
+          <entry key="Properties" value="25" />
+          <entry key="XML" value="325" />
+          <entry key="YAML" value="122" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -176,13 +185,64 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1166#1172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/SpringBootDemoApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/AnnotationUserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -204,25 +264,32 @@
       <find>transaction</find>
       <find>DataSourceTransactionManager</find>
       <find>getDSLContext</find>
+      <find>mybatis-spring-boot-starter</find>
+      <find>Annotation</find>
+      <find>setMyBatisService</find>
+      <find>setXmlUserMapper</find>
+      <find>setAnnotationUserMapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/JooqConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application-prod.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml/mybatis-gen-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/IUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/mybatis/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/jooq/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-test.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/configuration/JooqConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/jooq/JooqUserService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/shiro/CustomRealm.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml/jooq-gen-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/JooqUserService.java" />
@@ -233,7 +300,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/mybatis/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/jooq/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/JooqTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisMapperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/JooqServiceTest.java" />
@@ -245,11 +311,17 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/jooq/JooqConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/SpringBootDemoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/IUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/MyBatisUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/UserMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/XmlUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/SpringBootDemoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml/mybatis-gen-config.xml" />
       </list>
     </option>
   </component>
@@ -276,7 +348,19 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spring-boot-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jooq-codegen" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
@@ -289,7 +373,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="20" />
     <option name="y" value="23" />
     <option name="width" value="1385" />
@@ -300,6 +384,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -341,7 +426,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -350,7 +435,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -387,7 +473,31 @@
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -398,7 +508,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,32 +605,33 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="23" width="1385" height="797" extended-state="0" />
+    <frame x="-2" y="31" width="1370" height="690" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.26061058" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.26435044" />
       <window_info id="Structure" order="1" sideWeight="0.5007429" side_tool="true" weight="0.27702704" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838038" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988831" visible="true" weight="0.4212766" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.57304966" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988831" weight="0.6077348" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.572744" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32902297" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32780847" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50111693" side_tool="true" weight="0.4212766" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32986626" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32624114" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32596686" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4996277" weight="0.32765958" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.26061058" />
+      <window_info anchor="right" id="Database" order="3" weight="0.260574" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.4154877" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.16087614" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27364865" />
@@ -564,7 +674,20 @@
     <MESSAGE value="更新单元测试" />
     <MESSAGE value="日常更新" />
     <MESSAGE value="添加jooq自带支持的事务" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加jooq自带支持的事务" />
+    <MESSAGE value="添加mybatis的xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis的xml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -576,36 +699,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8.jar!/org/jooq/ResultQuery.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/jooq/generator/auto/tables/pojos/Users.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/db_init.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -664,13 +757,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/jooq/UserController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -693,7 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisMapperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisAnnotationUserMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
@@ -730,13 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -789,44 +868,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8-sources.jar!/org/jooq/impl/DefaultTransactionProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8-sources.jar!/org/jooq/impl/DefaultTransactionProvider.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/jooq/SpringTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8-sources.jar!/org/jooq/TransactionalRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8-sources.jar!/org/jooq/TransactionalRunnable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/jooq/MySpringTransactionProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,34 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/SpringBootDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -872,10 +898,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="101" column="33" lean-forward="true" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/annotations/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/mybatis/generator/auto/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/JooqUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/MyBatisUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="103" column="5" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+        <state relative-caret-position="78">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="e#868#869#0" expanded="true" />
             <element signature="e#924#925#0" expanded="true" />
@@ -883,17 +951,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console.sql">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="105">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/AnnotationUserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="101" column="33" lean-forward="true" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+        <state relative-caret-position="55">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/XmlUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/mybatis/generator/auto/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/mybatis-gen-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/SpringBootDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -902,20 +1014,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="75">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1672#1673#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1166#1172#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

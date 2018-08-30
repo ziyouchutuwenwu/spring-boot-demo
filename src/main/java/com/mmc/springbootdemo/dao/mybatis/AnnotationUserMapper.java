@@ -2,11 +2,10 @@ package com.mmc.springbootdemo.dao.mybatis;
 
 import com.mmc.springbootdemo.model.User;
 import org.apache.ibatis.annotations.*;
-
 import java.util.List;
 
 @Mapper
-public interface UserMapper {
+public interface AnnotationUserMapper {
 
     @Select("select * from users where name = #{name}")
     User findByName(@Param("name") String name);

@@ -1,8 +1,7 @@
 package com.mmc.springbootdemo;
 
-import com.mmc.springbootdemo.dao.mybatis.UserMapper;
+import com.mmc.springbootdemo.dao.mybatis.AnnotationUserMapper;
 import com.mmc.springbootdemo.model.User;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,24 +11,22 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MyBatisMapperTest {
+public class MyBatisAnnotationUserMapperTest {
 
-    private UserMapper _userMapper;
+    private AnnotationUserMapper _annotationUserMapper;
 
     @Autowired
-    public void setUserMapper(UserMapper userMapper){
-        _userMapper = userMapper;
+    public void setAnnotationUserMapper(AnnotationUserMapper userMapper){
+        _annotationUserMapper = userMapper;
     }
 
     @Test
     public void doUserMapperTest(){
 
-        _userMapper.truncate();
-        _userMapper.insert("rico", 123);
+        _annotationUserMapper.truncate();
+        _annotationUserMapper.insert("rico", 123);
 
         List<User> users = new ArrayList<>();
         User user1 = new User();
@@ -42,27 +39,27 @@ public class MyBatisMapperTest {
         user2.setName("bbb");
         users.add(user2);
 
-        _userMapper.batchInsert(users);
+        _annotationUserMapper.batchInsert(users);
 
         User user;
-        user = _userMapper.findByName("rico");
+        user = _annotationUserMapper.findByName("rico");
         assert(user.getAge() == 123);
 
-        user = _userMapper.findByName("aaa");
+        user = _annotationUserMapper.findByName("aaa");
         assert(user.getAge() == 10);
 
-        user = _userMapper.findByName("bbb");
+        user = _annotationUserMapper.findByName("bbb");
         assert(user.getAge() == 20);
 
-        users = _userMapper.getAllUsers();
+        users = _annotationUserMapper.getAllUsers();
         assert(users.size() == 3);
 
-        _userMapper.updateUser("rico", 111);
-        user = _userMapper.findByName("rico");
+        _annotationUserMapper.updateUser("rico", 111);
+        user = _annotationUserMapper.findByName("rico");
         assert(user.getAge() == 111);
 
-        _userMapper.deleteUser("rico");
-        users = _userMapper.getAllUsers();
+        _annotationUserMapper.deleteUser("rico");
+        users = _annotationUserMapper.getAllUsers();
         assert(users.size() == 2);
     }
 }
