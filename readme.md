@@ -5,6 +5,8 @@
 mvn spring-boot:run -D spring.profiles.active=development
 ```
 
+# jpa的ddl-auto属性会根据model自动建表，注意相关属性
+
 数据库初始工具
 ```
 pip install -r ./tools/requirements.txt

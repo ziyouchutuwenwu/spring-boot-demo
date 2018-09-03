@@ -60,6 +60,15 @@ spring:
   jooq:
     sql-dialect: postgres
 
+  jpa:
+    properties:
+      hibernate:
+        temp: # 避免启动的时候崩溃
+          use_jdbc_metadata_defaults: false
+    # 这个用于自动建表
+    hibernate:
+      ddl-auto: create
+
 logging:
   file: logs/log.log
   pattern:
