@@ -91,12 +91,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- 加载jdbc连接数据库 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-
         <!--druid-->
         <dependency>
             <groupId>com.alibaba</groupId>
