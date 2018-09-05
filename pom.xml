@@ -31,6 +31,7 @@
         <lombok.version>1.18.2</lombok.version>
         <pagehelper.version>1.2.5</pagehelper.version>
         <shiro.version>1.4.0</shiro.version>
+        <fastjson.version>1.2.49</fastjson.version>
     </properties>
 
     <dependencies>
@@ -131,6 +132,13 @@
             <groupId>com.google.collections</groupId>
             <artifactId>google-collections</artifactId>
             <version>1.0</version>
+        </dependency>
+
+        <!--阿里的fastJson库-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
 
     </dependencies>
