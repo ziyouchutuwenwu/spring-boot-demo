@@ -18,8 +18,14 @@ public class PhoneValidationValidator implements ConstraintValidator<PhoneValida
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
         if ( value == null || value.length() == 0 ) {
-            return true;
+
+            //禁用默认的message的值, 重新添加错误提示语句
+            context.disableDefaultConstraintViolation();
+            context.buildConstraintViolationWithTemplate("手机号不能为空").addConstraintViolation();
+
+            return false;
         }
+
         Matcher m = PHONE_PATTERN.matcher(value);
         return m.matches();
     }
