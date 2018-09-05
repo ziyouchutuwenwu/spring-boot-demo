@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_49.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/ValidateModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/validator/PhoneValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/validator/PhoneValidationValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JpaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JpaController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -193,7 +183,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="22" />
+          <entry key="html" value="1" />
+          <entry key="java" value="23" />
           <entry key="properties" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -201,22 +192,25 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="22" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="23" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="294" />
+          <entry key="java" value="317" />
           <entry key="properties" value="11" />
+          <entry key="txt" value="10" />
           <entry key="xml" value="42" />
           <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="294" />
+          <entry key="JAVA" value="317" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="11" />
           <entry key="XML" value="42" />
           <entry key="YAML" value="8" />
@@ -230,7 +224,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -461,6 +455,30 @@
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -571,14 +589,14 @@
     <frame x="0" y="31" width="1533" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.24747814" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.24747814" />
       <window_info id="Structure" order="1" sideWeight="0.5007429" side_tool="true" weight="0.27702704" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838038" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848944" weight="0.17830609" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.57057947" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5690936" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -651,25 +669,8 @@
     <MESSAGE value="添加mybatis的xml" />
     <MESSAGE value="更新说明" />
     <MESSAGE value="移除jdbc驱动" />
-    <option name="LAST_COMMIT_MESSAGE" value="移除jdbc驱动" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="添加验证器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加验证器" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -681,13 +682,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8.jar!/org/jooq/impl/DSL.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -880,6 +874,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -965,9 +962,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/500.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="227">
           <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -978,7 +978,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
