@@ -1,4 +1,4 @@
-package com.mmc.springbootdemo.validator;
+package com.mmc.springbootdemo.validator.hibernate;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
