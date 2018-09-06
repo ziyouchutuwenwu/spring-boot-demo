@@ -4,9 +4,11 @@ import com.alibaba.fastjson.JSONObject;
 import com.mmc.springbootdemo.exception.Result;
 import com.mmc.springbootdemo.model.ValidateModel;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
+import java.util.Locale;
 
 @Slf4j
 @RestController
@@ -21,6 +23,10 @@ public class ValidationController {
     @RequestMapping(value = "save", method = RequestMethod.GET)
     @ResponseBody
     public Result validateSave(@Valid ValidateModel validateModel) {
+
+        Locale locale = LocaleContextHolder.getLocale();
+
+        log.info("lang" + locale.getCountry());
 
         log.info("Good" + validateModel.getBirthday());
         Result okResult = new Result();

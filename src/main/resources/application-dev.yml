@@ -24,15 +24,19 @@ com:
       name: name in dev
 
 spring:
-  freemarker:
-    cache: false
-    charset: utf-8
+  thymeleaf:
+    prefix: classpath:/templates/
     check-template-location: true
-    content-type: text/html
-    expose-request-attributes: true
-    expose-session-attributes: true
-    request-context-attribute: request
     suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: html5
+    cache: false
+
+  messages:
+    fallbackToSystemLocale: false
+    # 文件名
+    basename: i18n/reserved, i18n/message
 
   devtools:
     restart:

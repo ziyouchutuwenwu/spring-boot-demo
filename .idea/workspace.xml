@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="">
+    <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="增加国际化，更换模板引擎">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/LocaleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/message_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/show_bak.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_8_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/show.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,48 +191,58 @@
     <session id="1342868804">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="html" value="1" />
-          <entry key="java" value="23" />
-          <entry key="properties" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="cmd" value="1" />
+          <entry key="html" value="8" />
+          <entry key="java" value="38" />
+          <entry key="md" value="1" />
+          <entry key="properties" value="16" />
+          <entry key="xml" value="5" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="23" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="HTML" value="8" />
+          <entry key="JAVA" value="38" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="16" />
+          <entry key="XML" value="5" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="317" />
-          <entry key="properties" value="11" />
-          <entry key="txt" value="10" />
-          <entry key="xml" value="42" />
-          <entry key="yml" value="8" />
+          <entry key="html" value="15" />
+          <entry key="java" value="383" />
+          <entry key="md" value="58" />
+          <entry key="properties" value="122" />
+          <entry key="txt" value="24" />
+          <entry key="xml" value="51" />
+          <entry key="yml" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="317" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Properties" value="11" />
-          <entry key="XML" value="42" />
-          <entry key="YAML" value="8" />
+          <entry key="HTML" value="15" />
+          <entry key="JAVA" value="383" />
+          <entry key="PLAIN_TEXT" value="82" />
+          <entry key="Properties" value="122" />
+          <entry key="XML" value="51" />
+          <entry key="YAML" value="127" />
         </counts>
       </usages-collector>
     </session>
@@ -221,10 +250,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/LocaleConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="52">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,6 +296,7 @@
       <find>setAnnotationUserMapper</find>
       <find>bgm.mapper.pkgname</find>
       <find>google</find>
+      <find>spring-boot-starter-freemarker</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -280,14 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/xml/jooq-gen-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/JooqUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/MyBatisUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/ConfigService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/mybatis/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/jooq/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/Config.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/JooqTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mmc/springbootdemo/MyBatisMapperTest.java" />
@@ -309,13 +331,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/mybatis/XmlUserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/impl/MyBatisUserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/mybatis-gen.properties" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/main/resources/xml/mybatis-gen-config.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/JpaUserDO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/dao/JpaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/JpaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/JpaUser.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console_2.sql" />
@@ -324,13 +344,23 @@
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/Result.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/validator/PhoneValidation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/validator/PhoneValidationValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/ValidateModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/show_bak.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/index.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/index_zh_CN.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/common_en_US.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/common.properties" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/show.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/message.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/LocaleConfig.java" />
       </list>
     </option>
   </component>
@@ -432,25 +462,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -465,16 +477,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -484,17 +487,6 @@
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="585f5214-ef31-4296-8fda-e4c87582f2dc" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
@@ -515,10 +507,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mmc.springbootdemo.config.jooq" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/properties" />
+      <recent name="$PROJECT_DIR$/src/main/resources/xml" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/i18n" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/xml" />
       <recent name="$PROJECT_DIR$/src/main/resources/properties" />
     </key>
@@ -526,10 +522,8 @@
       <recent name="com.mmc.springbootdemo.controller" />
       <recent name="com.mmc.springbootdemo.controller.jooq" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/properties" />
-      <recent name="$PROJECT_DIR$/src/main/resources/xml" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mmc.springbootdemo.config.jooq" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -587,25 +581,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1533" height="820" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.24747814" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.25523296" />
       <window_info id="Structure" order="1" sideWeight="0.5007429" side_tool="true" weight="0.27702704" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838038" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848944" weight="0.17830609" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5690936" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49763674" visible="true" weight="0.6126126" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4009009" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838038" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.45045045" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50151056" side_tool="true" weight="0.6077348" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50236326" side_tool="true" weight="0.6591592" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32882884" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3254086" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.46546546" />
       <window_info active="true" anchor="bottom" id="Database Console" order="13" sideWeight="0.4996277" visible="true" weight="0.32732734" />
       <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.32882884" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -670,7 +663,8 @@
     <MESSAGE value="更新说明" />
     <MESSAGE value="移除jdbc驱动" />
     <MESSAGE value="添加验证器" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加验证器" />
+    <MESSAGE value="增加国际化，更换模板引擎" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加国际化，更换模板引擎" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -682,64 +676,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8.jar!/org/jooq/impl/DefaultTransactionProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8-sources.jar!/org/jooq/impl/DefaultTransactionProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/jooq/SpringTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.8/jooq-3.10.8-sources.jar!/org/jooq/TransactionalRunnable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/jooq/MySpringTransactionProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/jooq/JooqConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/service/user/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/annotations/Mapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/application-dev.yml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/my/mybatis/generator/auto/entity/User.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/my/mybatis/generator/auto/xml/UserMapper.xml" />
@@ -805,16 +741,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/585f5214-ef31-4296-8fda-e4c87582f2dc/console_1.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,13 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -887,27 +807,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/ConstraintValidator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -945,40 +846,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/Result.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/Result.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java" />
+    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/UnderTowerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/500.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/show_bak.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidationController.java">
+    <entry file="jar:///usr/lib/jvm/jdk-8-oracle-x64/src.zip!/java/util/Locale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="465">
+          <caret line="561" column="31" selection-start-line="561" selection-start-column="31" selection-end-line="561" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_zh_CN.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message_en_US.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/message.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/LocaleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

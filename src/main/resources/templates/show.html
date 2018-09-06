@@ -1,2 +1,4 @@
-这是一个基本的模板引擎
-<p>username:${hello}</p>
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+<label th:text="#{index.welcome}"></label>
+<p th:text="${hello}" />
+</body>
