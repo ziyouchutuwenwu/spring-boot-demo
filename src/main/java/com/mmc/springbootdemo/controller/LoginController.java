@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Slf4j
 @RestController
 public class LoginController {
 
     @RequestMapping(value = "/do_login", method = RequestMethod.POST)
-    public void doLogin(String name, String password) {
+    public void doLogin(HttpServletRequest request) {
+
+        String name = request.getParameter("name");
+        String password = request.getParameter("password");
 
         Subject currenUser = SecurityUtils.getSubject();
 

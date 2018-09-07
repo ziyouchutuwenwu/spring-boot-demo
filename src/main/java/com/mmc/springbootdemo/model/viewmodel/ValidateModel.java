@@ -1,4 +1,4 @@
-package com.mmc.springbootdemo.model;
+package com.mmc.springbootdemo.model.viewmodel;
 
 import com.mmc.springbootdemo.validator.hibernate.PhoneValidation;
 import lombok.Getter;

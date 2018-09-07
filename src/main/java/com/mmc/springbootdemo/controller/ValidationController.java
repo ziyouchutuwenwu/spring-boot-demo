@@ -3,7 +3,7 @@ package com.mmc.springbootdemo.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.baidu.unbiz.fluentvalidator.FluentValidator;
 import com.mmc.springbootdemo.exception.Result;
-import com.mmc.springbootdemo.model.ValidateModel;
+import com.mmc.springbootdemo.model.viewmodel.ValidateModel;
 import com.mmc.springbootdemo.validator.fluent.AgeValidator;
 import com.mmc.springbootdemo.validator.fluent.NameValidator;
 import lombok.extern.slf4j.Slf4j;
@@ -33,7 +33,7 @@ public class ValidationController {
 
         log.info("lang" + locale.getCountry());
 
-        log.info("Good" + validateModel.getBirthday());
+        log.info("birthday" + validateModel.getBirthday());
         Result okResult = new Result();
         okResult.setCode(200);
         okResult.setMessage(JSONObject.toJSON(validateModel).toString());

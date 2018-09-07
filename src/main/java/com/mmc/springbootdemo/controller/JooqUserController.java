@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +37,7 @@ public class JooqUserController {
     }
 
     @RequestMapping(value = "/find_by_name", method = RequestMethod.GET)
-    public User findByName(String name) {
+    public User findByName(@RequestParam("name") String name) {
 
         User user = _jooqUserService.findByName(name);
 
@@ -46,7 +47,7 @@ public class JooqUserController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public User insertUser(String name, Integer age) {
+    public User insertUser(@RequestParam("name") String name, @RequestParam("age") Integer age) {
 
         log.debug("这是insertUser", name, age);
 
@@ -56,7 +57,7 @@ public class JooqUserController {
     }
 
     @RequestMapping(value = "/batch_add", method = RequestMethod.GET)
-    public User batchAddUsers(String name, Integer age) {
+    public User batchAddUsers(@RequestParam("name") String name, @RequestParam("age") Integer age) {
 
         log.debug("这是batchAddUsers", name, age);
 
@@ -71,14 +72,14 @@ public class JooqUserController {
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.GET)
-    public void deleteUser(String name){
+    public void deleteUser(@RequestParam("name") String name){
         log.debug("这是deleteUser", name);
 
         _jooqUserService.deleteUser(name);
     }
 
     @RequestMapping(value = "/update", method = RequestMethod.GET)
-    public void updateUser(String conditionName, Integer newAge){
+    public void updateUser(@RequestParam("name") String conditionName, @RequestParam("age") Integer newAge){
         log.debug("这是updateUser", conditionName, newAge);
 
         _jooqUserService.updateUser(conditionName, newAge);

@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +39,9 @@ public class MyBatisUserController {
     }
 
     @RequestMapping(value = "/find_by_name", method = RequestMethod.GET)
-    public User findByName(String name) {
+    public User findByName(HttpServletRequest request) {
+
+        String name = request.getParameter("name");
 
         User user = _mybatisUserService.findByName(name);
 
@@ -47,7 +51,10 @@ public class MyBatisUserController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public User insertUser(String name, Integer age) {
+    public User insertUser(HttpServletRequest request) {
+
+        String name = request.getParameter("name");
+        Integer age = Integer.parseInt(request.getParameter("age"));
 
         log.debug("这是insertUser", name, age);
 
@@ -57,29 +64,39 @@ public class MyBatisUserController {
     }
 
     @RequestMapping(value = "/batch_add", method = RequestMethod.GET)
-    public User batchAddUsers(String name, Integer age) {
+    public User batchAddUsers(HttpServletRequest request) {
 
-    log.debug("这是batchAddUsers", name, age);
+        String name = request.getParameter("name");
+        Integer age = Integer.parseInt(request.getParameter("age"));
 
-    List<User> users = new ArrayList<>();
-    User user = new User();
-    user.setName(name);
-    user.setAge(age);
-    users.add(user);
-    _mybatisUserService.batchAddUsers(users);
+        log.debug("这是batchAddUsers", name, age);
 
-    return _mybatisUserService.findByName(name);
+        List<User> users = new ArrayList<>();
+        User user = new User();
+        user.setName(name);
+        user.setAge(age);
+        users.add(user);
+        _mybatisUserService.batchAddUsers(users);
+
+        return _mybatisUserService.findByName(name);
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.GET)
-    public void deleteUser(String name){
+    public void deleteUser(HttpServletRequest request){
+
+        String name = request.getParameter("name");
+
         log.debug("这是deleteUser", name);
 
         _mybatisUserService.deleteUser(name);
     }
 
     @RequestMapping(value = "/update", method = RequestMethod.GET)
-    public void updateUser(String conditionName, Integer newAge){
+    public void updateUser(HttpServletRequest request){
+
+        String conditionName = request.getParameter("name");
+        Integer newAge = Integer.parseInt(request.getParameter("age"));
+
         log.debug("这是updateUser", conditionName, newAge);
 
         _mybatisUserService.updateUser(conditionName, newAge);
