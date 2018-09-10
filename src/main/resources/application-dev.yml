@@ -1,5 +1,10 @@
 server:
   port: 7890
+  # gzip压缩
+  compression:
+    enabled: true
+    mime-types: application/json, application/xml, text/html, text/xml, text/plain
+    min-response-size: 4096
   undertow:
     accesslog:
       dir: undertow-log
