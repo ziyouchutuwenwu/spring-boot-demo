@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="验证器添加fluent-validator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/request/ParameterRequestWrapper.java" afterDir="false" />
+    <list default="true" id="8bd948a9-49dd-495a-877f-4f7e7b080087" name="Default Changelist" comment="修改过滤器和拦截器，支持参数修改和结果修改">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MutableRequestResponseFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/IntercepterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/IntercepterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/GzippedFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/ResponseWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ResponseWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyIntercepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyIntercepter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -183,11 +182,11 @@
     <session id="1342868804">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="5" />
-          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.13" value="7" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -197,46 +196,46 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="39" />
+          <entry key="class" value="67" />
           <entry key="cmd" value="1" />
           <entry key="html" value="9" />
           <entry key="http" value="4" />
-          <entry key="java" value="204" />
+          <entry key="java" value="278" />
           <entry key="md" value="1" />
           <entry key="mvnw" value="1" />
           <entry key="properties" value="17" />
           <entry key="snippet" value="1" />
           <entry key="xml" value="7" />
-          <entry key="yml" value="12" />
+          <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="39" />
+          <entry key="CLASS" value="67" />
           <entry key="HTML" value="9" />
           <entry key="HTTP Request" value="3" />
-          <entry key="JAVA" value="204" />
+          <entry key="JAVA" value="278" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="17" />
           <entry key="Scratch" value="2" />
           <entry key="XML" value="7" />
-          <entry key="YAML" value="12" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="6" />
-          <entry key="dummy" value="37" />
+          <entry key="dummy" value="38" />
           <entry key="html" value="15" />
-          <entry key="java" value="3343" />
+          <entry key="java" value="3791" />
           <entry key="md" value="58" />
           <entry key="properties" value="146" />
-          <entry key="txt" value="41" />
+          <entry key="txt" value="62" />
           <entry key="xml" value="83" />
           <entry key="yml" value="179" />
         </counts>
@@ -245,8 +244,8 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="HTML" value="15" />
-          <entry key="JAVA" value="3343" />
-          <entry key="PLAIN_TEXT" value="136" />
+          <entry key="JAVA" value="3791" />
+          <entry key="PLAIN_TEXT" value="158" />
           <entry key="Properties" value="146" />
           <entry key="XML" value="83" />
           <entry key="YAML" value="179" />
@@ -255,20 +254,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyIntercepter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -280,7 +266,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jooq-generator</find>
       <find>@Autowired</find>
       <find>batchAddUsers</find>
       <find>users</find>
@@ -310,6 +295,7 @@
       <find>getInputStream</find>
       <find>getReader</find>
       <find>ResponseWrapper</find>
+      <find>druid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -323,9 +309,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/validator/PhoneValidationValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/ValidateModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ValidateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/exception/BindExceptionHanlder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/show_bak.html" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/index.properties" />
@@ -345,7 +328,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
         <option value="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/IntercepterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/MyBatisUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java" />
@@ -358,7 +340,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/ResponseWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/GzipRequestWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ConfigController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/reqreswrapper/ParameterResponseWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/reqreswrapper/ParameterRequestWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/ParameterRequestWrapper.java" />
@@ -370,10 +351,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/ParameterResponseWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ParameterResponseWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/GzippedFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ResponseWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/InterceptorConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/IntercepterConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ConfigController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MutableRequestResponseFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyIntercepter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/FilterConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
       </list>
     </option>
   </component>
@@ -426,7 +412,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
     <option name="y" value="31" />
     <option name="width" value="1533" />
     <option name="height" value="820" />
@@ -456,8 +441,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -490,6 +473,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -547,6 +539,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -560,10 +554,8 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/properties" />
-      <recent name="$PROJECT_DIR$/src/main/resources/xml" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mmc.springbootdemo.config.jooq" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/i18n" />
@@ -572,12 +564,15 @@
       <recent name="$PROJECT_DIR$/src/main/resources/properties" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mmc.springbootdemo.filter" />
       <recent name="com.mmc.springbootdemo.validator.fluent" />
       <recent name="com.mmc.springbootdemo.controller" />
       <recent name="com.mmc.springbootdemo.controller.jooq" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mmc.springbootdemo.config.jooq" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/properties" />
+      <recent name="$PROJECT_DIR$/src/main/resources/xml" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -643,17 +638,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="31" width="1533" height="820" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="31" width="1533" height="820" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.2532073" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.23227549" />
       <window_info id="Structure" order="1" sideWeight="0.5007429" side_tool="true" weight="0.27702704" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32732734" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49763674" weight="0.45645645" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5915916" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49763674" weight="0.5960961" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.506006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882884" />
@@ -673,7 +667,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32885003" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.28323263" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.28291693" />
       <window_info anchor="right" id="RestServices" order="6" />
     </layout>
     <layout-to-restore>
@@ -759,7 +753,32 @@
     <MESSAGE value="增加国际化，更换模板引擎" />
     <MESSAGE value="日常更新" />
     <MESSAGE value="验证器添加fluent-validator" />
-    <option name="LAST_COMMIT_MESSAGE" value="验证器添加fluent-validator" />
+    <MESSAGE value="修改过滤器和拦截器，支持参数修改和结果修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改过滤器和拦截器，支持参数修改和结果修改" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyIntercepter.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MutableRequestResponseFilter.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -771,6 +790,17 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>((StatHttpServletResponseWrapper) response).response</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.druid.support.http.WebStatFilter.StatHttpServletResponseWrapper</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>bytesAfterGzipped</expression-string>
         <language-id>JAVA</language-id>
@@ -806,119 +836,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="65" lean-forward="true" selection-start-column="65" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/LocaleConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ErrorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JpaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/MyBatisUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/JooqUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/model/viewmodel/ValidateModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/IntercepterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-8-oracle-x64/src.zip!/java/io/PrintWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="471" column="16" selection-start-line="471" selection-start-column="16" selection-end-line="471" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/servlet/MyServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.49/fastjson-1.2.49.jar!/com/alibaba/fastjson/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/ResponseWrapper.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletResponseWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="128" selection-start-line="6" selection-start-column="128" selection-end-line="6" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyServletOutputStream.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletResponse.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -944,13 +861,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/UrlResponseWrapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/WapperedOutputStream.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.8.RELEASE/spring-webmvc-5.0.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="109" column="154" selection-start-line="109" selection-start-column="154" selection-end-line="109" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-8-oracle-x64/src.zip!/java/io/OutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1438">
@@ -1035,59 +945,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ResponseWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/GzipRequestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ResponseOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ParameterResponseWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ResponseWriter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/GzipRequestWrapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ResponseOutputStream.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/response/ParameterResponseWrapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/wrapper/request/ParameterRequestWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,26 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ConfigController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,20 +977,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/web/servlet/FilterRegistrationBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+        <state relative-caret-position="225">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-8-oracle-x64/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/InterceptorConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/IntercepterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="17" column="208" selection-start-line="17" selection-start-column="208" selection-end-line="17" selection-end-column="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10.jar!/com/alibaba/druid/support/http/WebStatFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="20" column="196" selection-start-line="20" selection-start-column="196" selection-end-line="20" selection-end-column="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.8.RELEASE/spring-web-5.0.8.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="17" column="231" selection-start-line="17" selection-start-column="231" selection-end-line="17" selection-end-column="231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/controller/ConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.8.RELEASE/spring-webmvc-5.0.8.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="32" column="233" selection-start-line="32" selection-start-column="233" selection-end-line="32" selection-end-column="233" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.8.RELEASE/spring-webmvc-5.0.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="110" column="183" selection-start-line="110" selection-start-column="183" selection-end-line="110" selection-end-column="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="43" column="153" selection-start-line="43" selection-start-column="153" selection-end-line="43" selection-end-column="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/undertow/undertow-servlet/1.4.25.Final/undertow-servlet-1.4.25.Final.jar!/io/undertow/servlet/handlers/ServletHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="138" selection-start-line="11" selection-start-column="138" selection-end-line="11" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/SubjectCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="92" column="120" selection-start-line="92" selection-start-column="120" selection-end-line="92" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="51" column="221" selection-start-line="51" selection-start-column="221" selection-end-line="51" selection-end-column="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/undertow/undertow-servlet/1.4.25.Final/undertow-servlet-1.4.25.Final.jar!/io/undertow/servlet/core/ManagedFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" column="196" selection-start-line="15" selection-start-column="196" selection-end-line="15" selection-end-column="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/undertow/undertow-servlet/1.4.25.Final/undertow-servlet-1.4.25.Final.jar!/io/undertow/servlet/handlers/FilterHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/ServletResponseWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.8.RELEASE/spring-webmvc-5.0.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="109" column="154" selection-start-line="109" selection-start-column="154" selection-end-line="109" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MutableRequestResponseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/filter/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/config/FilterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmc/springbootdemo/interceptor/MyIntercepter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="91">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -21,8 +21,7 @@ public class ConfigController {
         _configService = configureService;
     }
 
-//    @RequestMapping(value = "/name", method = RequestMethod.GET)
-    @RequestMapping(value = "/name", method = RequestMethod.POST)
+    @RequestMapping(value = "/name", method = RequestMethod.GET)
     public String getName(HttpServletRequest request) {
 
         String preParamFromIntercepter = request.getParameter("pre_param");
