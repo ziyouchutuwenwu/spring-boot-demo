@@ -23,3 +23,6 @@ mvn jooq-codegen:generate
 
 # mbg不支持yml！！！
 - pgsql的jdbc驱动需要手工下载
+
+# mybatis-plus输入模块为auto
+- 注意代码生成的xml文件的位置

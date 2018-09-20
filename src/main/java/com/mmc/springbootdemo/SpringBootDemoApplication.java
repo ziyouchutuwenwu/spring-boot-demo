@@ -5,7 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
-@MapperScan({"my.mybatis.generator.auto","com.mmc.springbootdemo.dao.mybatis"})
+/*
+* 前面两个是mybatis
+* 后面是mybatis-plus
+* */
+@MapperScan({"my.mybatis.generator.auto","com.mmc.springbootdemo.dao.mybatis", "my.mbp.generator.auto"})
 @ServletComponentScan
 @SpringBootApplication
 public class SpringBootDemoApplication {

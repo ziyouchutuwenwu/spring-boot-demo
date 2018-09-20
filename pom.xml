@@ -80,6 +80,19 @@
             <version>${mybatis.version}</version>
         </dependency>
 
+        <!--mybatis-plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+
+        <!--mybatis-plus需要的freemarker-->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
+
         <!--jooq-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
