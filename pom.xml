@@ -31,7 +31,7 @@
         <lombok.version>1.18.2</lombok.version>
         <pagehelper.version>1.2.5</pagehelper.version>
         <shiro.version>1.4.0</shiro.version>
-        <fastjson.version>1.2.49</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <fluent-validator.version>1.0.9</fluent-validator.version>
     </properties>
 
